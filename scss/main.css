@@ -11999,7 +11999,7 @@ p {
   height: 100%;
   background-image: url("../imagesRestaurant/pexels-chanwalrus.jpg");
   background-size: cover;
-  filter: brightness(0.4);
+  filter: brightness(0.5);
 }
 .hero-scene * {
   position: relative;
