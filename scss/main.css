@@ -11972,7 +11972,7 @@ html {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 270px;
 }
 
 footer.footer {
@@ -12020,7 +12020,8 @@ p {
 .image-card {
   position: relative;
 }
-.image-card:hover .titre-image {
+.image-card:hover .titre-image,
+.image-card:hover .action-image-buttons {
   opacity: 1;
 }
 .image-card:hover img {
@@ -12037,7 +12038,17 @@ p {
   opacity: 0;
   transition: all 0.3s;
 }
-
-.form-label {
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.image-card .form-label {
   color: #906427;
 }/*# sourceMappingURL=main.css.map */
