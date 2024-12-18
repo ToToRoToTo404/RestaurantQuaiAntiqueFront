@@ -12051,4 +12051,9 @@ p {
 }
 .image-card .form-label {
   color: #906427;
+}
+.image-card .allReservations a {
+  display: block;
+  color: #292222;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */
