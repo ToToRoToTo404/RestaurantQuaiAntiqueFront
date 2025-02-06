@@ -106,5 +106,26 @@ p{
         padding: 10px;
     }
 }
+.carte-page h2 {
+    color:#906427 ; /* Remplacez #ff6347 par la couleur de votre choix */
+}
+.vh-100 {
+    min-height: 100vh;
+}
+ul.list-unstyled {
+    padding: 0;
+    text-align: center;
+}
+
+ul.list-unstyled li {
+    list-style: none;
+    margin-bottom: 10px; /* Espace entre les éléments de la liste */
+}
+.card {
+    border: 1px solid #ddd; /* Couleur de la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    
+}
     
 }
