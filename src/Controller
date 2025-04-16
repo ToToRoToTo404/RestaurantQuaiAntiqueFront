@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
+
+class RegistrationController extends AbstractController
+{
+    #[Route('/api/registration', name: 'api_registration', methods: ['POST', 'OPTIONS'])]
+    public function register(Request $request): JsonResponse
+    {
+        // Récupérer les données de la requête
+        $data = json_decode($request->getContent(), true);
+
+        // Traitement de l'inscription...
+
+        return $this->json([
+            'message' => 'Inscription réussie'
+        ]);
+    }
+}

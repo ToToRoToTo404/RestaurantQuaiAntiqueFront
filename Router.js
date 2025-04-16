@@ -1,0 +1,6 @@
+// Hypothetical import - adjust the path according to your project structure
+import { showAndHideElementsForRoles } from './utils';
+
+// ...existing code...
+        showAndHideElementsForRoles(userRole);
+// ...existing code...

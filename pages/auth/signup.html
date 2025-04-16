@@ -7,48 +7,51 @@
 
 
 <div class="container">
-    <form>
+    <form id="FormulaireInscription">
         <div class="mb-3">
             <label for="NomInput" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="NomInput" placeholder="Votre Nom">
+            <input type="text" class="form-control" id="NomInput" placeholder="Votre Nom" name="nom" autocomplete="family-name" required>
             <div class="invalid-feedback">
                 Votre nom est requis.
+            </div>
         </div>
         <div class="mb-3">
             <label for="PrénomInput" class="form-label">Prénom</label>
-            <input type="text" class="form-control" id="PrénomInput" placeholder="Votre prénom" >
+            <input type="text" class="form-control" id="PrénomInput" placeholder="Votre prénom" name="prenom" autocomplete="given-name" required>
             <div class="invalid-feedback">
                 Votre prénom est requis.  
             </div> 
         </div>
         <div class="mb-3">
           <label for="EmailInput" class="form-label">Email</label>
-          <input type="email" class="form-control" id="EmailInput" placeholder="Votre Email" > 
-        </div>
-        <div class="invalid-feedback">
-            Votre email doit être au bon format.
+          <input type="email" class="form-control" id="EmailInput" placeholder="Votre Email" name="email" autocomplete="email" required> 
+          <div class="invalid-feedback">
+              Votre email doit être au bon format.
+          </div>
         </div>
         <div class="mb-3">
           <label for="PasswordInput" class="form-label">Mot de passe</label>
-          <input type="password" class="form-control" id="PasswordInput" >
-          <div class="invalid-feedback">
+          <input type="password" class="form-control" id="PasswordInput" name="mdp" autocomplete="new-password" required aria-describedby="password-feedback">
+          <div class="invalid-feedback" id="password-feedback">
             Votre mot de passe doit contenir au moins 8 caractères, une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial.
           </div>
           <div class="valid-feedback">
             Mot de passe valide.
+          </div>
         </div>
         <div class="mb-3">
-            <label for="ValidatePasswordInput"class="form-label">Validez votre de passe</label>
-            <input type="password" class="form-control" id="ValidatePasswordInput">
-          </div>
-          <div class="invalid-feedback">
-            Les mots de passe ne correspondent pas.
+            <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
+            <input type="password" class="form-control" id="ValidatePasswordInput" autocomplete="new-password" required>
+            <div class="invalid-feedback">
+                Les mots de passe ne correspondent pas.
             </div>
+        </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+            <button type="button" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
         </div>
     </form>
     <div class="text-center pt-3">
-        <a href="/signing">Vous avez déja un compte. Connectez-vous ici !</a>
+        <a href="/signin">Vous avez déjà un compte. Connectez-vous ici !</a>
     </div>
 </div>
+<script src="/js/auth/signup.js" defer></script>
